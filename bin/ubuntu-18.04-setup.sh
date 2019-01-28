@@ -153,7 +153,18 @@ sudo ubuntu-drivers autoinstall
 wget https://dbeaver.io/files/dbeaver-ce-latest-linux.gtk.x86_64.tar.gz
 tar zxvf dbeaver-ce-latest-linux.gtk.x86_64.tar.gz
 
-sudo mv ./dbeaver /usr/local/bin
+sudo mv ./dbeaver /opt
+
+cat >/usr/share/applications/dbeaver.desktop <<EOL
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/opt/dbeaver/dbeaver
+Name=DBeaver
+Icon=/opt/dbeaver/dbeaver.png
+EOL
 
 
 # ----
@@ -169,4 +180,10 @@ sudo systemctl status docker
 sudo usermod -aG docker paul
 
 su paul
+
+
+# ---- 
+# setup the launcher with favourite apps
+dconf write /org/gnome/shell/favorite-apps "['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'firefox.desktop', 'code.desktop', 'gitkraken_gitkraken.desktop', 'sublime_text.desktop', 'dbeaver.desktop', 'slack_slack.desktop', 'caprine_caprine.desktop', 'spotify_spotify.desktop', 'steam.desktop', 'synergy.desktop', 'gimp.desktop', 'transmission-gtk.desktop', 'sayonara.desktop', 'clipgrab.desktop']"
+
 
