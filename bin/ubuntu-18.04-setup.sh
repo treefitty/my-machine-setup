@@ -20,6 +20,13 @@ sudo snap install caprine
 
 
 # ----
+# LibreOffice (OpenOffice is Oracle, this is the fork)
+sudo add-apt-repository ppa:libreoffice/ppa
+sudo apt-get update
+sudo apt-get install libreoffice
+
+
+# ----
 # nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
 
