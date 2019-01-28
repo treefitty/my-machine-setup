@@ -6,18 +6,29 @@ sudo apt install curl -y
 sudo apt install glances -y
 sudo apt install git -y
 sudo apt install openssh-server -y
-sudo apt install tree -y
-sudo apt install jq -y
-sudo apt-get install python-pygments -y
-sudo apt-get install guake -y
-sudo apt-get install gimp -y
+sudo apt install -y tree
+sudo apt install -y jq
+sudo apt install -y python-pygments
+sudo apt install -y guake
+sudo apt install -y gimp
+sudo apt install -y xclip
+sudo apt install -y icdiff
+sudo apt install -y default-jdk
+
 sudo snap install caprine
-sudo apt install xclip
 
 
 # ----
 # nvm
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+
+nvm install --lts
+
+npm install -g jsonlint
+npm install -g yo
+npm install -g nyc
+npm install -g typescript
+npm install -g yarn
 
 
 # ----
