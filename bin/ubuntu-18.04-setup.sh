@@ -147,6 +147,13 @@ sudo apt-get install sayonara -y
 sudo ubuntu-drivers autoinstall
 
 
+# ----
+# dbeaver
+wget https://dbeaver.io/files/dbeaver-ce-latest-linux.gtk.x86_64.tar.gz
+tar zxvf dbeaver-ce-latest-linux.gtk.x86_64.tar.gz
+
+sudo mv ./dbeaver /usr/local/bin
+
 
 # ----
 # docker
