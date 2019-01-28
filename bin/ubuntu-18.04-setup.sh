@@ -14,6 +14,7 @@ sudo apt install -y gimp
 sudo apt install -y xclip
 sudo apt install -y icdiff
 sudo apt install -y default-jdk
+sudo apt install -y nmap
 
 sudo snap install caprine
 
