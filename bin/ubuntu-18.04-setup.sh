@@ -19,6 +19,7 @@ sudo apt install -y net-tools
 sudo apt install -y conky-all
 sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
 sudo apt install -y yamllint
+sudo apt install -y traceroute
 
 sudo snap install caprine
 
