@@ -97,6 +97,7 @@ sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev librea
 
 sudo pyenv install 3.7.2
 
+
 # -----
 # Chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -233,10 +234,14 @@ sudo usermod -aG docker paul
 su paul
 
 
+# ----
+pip install docker-compose
+
+
 # ---- 
 # setup the launcher with favourite apps
 # use this to read them when updating: dconf read /org/gnome/shell/favorite-apps
-dconf write /org/gnome/shell/favorite-apps "['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'firefox.desktop', 'code.desktop', 'gitkraken_gitkraken.desktop', 'sublime_text.desktop', 'dbeaver.desktop', 'slack_slack.desktop', 'caprine_caprine.desktop', 'spotify_spotify.desktop', 'steam.desktop', 'synergy.desktop', 'gimp.desktop', 'transmission-gtk.desktop', 'sayonara.desktop', 'clipgrab.desktop', 'gnome-calculator_gnome-calculator.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'virtualbox.desktop']"
+dconf write /org/gnome/shell/favorite-apps "['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'code.desktop', 'gitkraken_gitkraken.desktop', 'sublime_text.desktop', 'dbeaver.desktop', 'slack_slack.desktop', 'caprine_caprine.desktop', 'spotify_spotify.desktop', 'steam.desktop', 'synergy.desktop', 'gimp.desktop', 'transmission-gtk.desktop', 'sayonara.desktop', 'clipgrab.desktop', 'gnome-calculator_gnome-calculator.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'virtualbox.desktop']"
 
 
 # ----
