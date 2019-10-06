@@ -16,7 +16,6 @@ sudo apt install -y icdiff
 sudo apt install -y default-jdk 
 sudo apt install -y nmap
 sudo apt install -y net-tools
-sudo apt install -y conky-all
 sudo apt install -y gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly
 sudo apt install -y yamllint
 sudo apt install -y traceroute
@@ -241,7 +240,7 @@ pip install docker-compose
 # ---- 
 # setup the launcher with favourite apps
 # use this to read them when updating: dconf read /org/gnome/shell/favorite-apps
-dconf write /org/gnome/shell/favorite-apps "['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'code.desktop', 'gitkraken_gitkraken.desktop', 'sublime_text.desktop', 'dbeaver.desktop', 'slack_slack.desktop', 'caprine_caprine.desktop', 'spotify_spotify.desktop', 'steam.desktop', 'synergy.desktop', 'gimp.desktop', 'transmission-gtk.desktop', 'sayonara.desktop', 'clipgrab.desktop', 'gnome-calculator_gnome-calculator.desktop', 'libreoffice-calc.desktop', 'libreoffice-draw.desktop', 'virtualbox.desktop']"
+dconf write /org/gnome/shell/favorite-apps "['org.gnome.Nautilus.desktop', 'google-chrome.desktop', 'code.desktop', 'sublime_text.desktop', 'caprine_caprine.desktop', 'spotify_spotify.desktop', 'steam.desktop', 'gimp.desktop', 'transmission-gtk.desktop', 'sayonara.desktop', 'clipgrab.desktop', 'gnome-calculator_gnome-calculator.desktop', 'virtualbox.desktop']"
 
 
 # ----
