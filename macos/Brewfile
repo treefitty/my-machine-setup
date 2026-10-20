@@ -2,7 +2,6 @@
 # Formulae/casks are `brew leaves` + `brew list --cask`; orbstack, chrome, slack, 1password and the font were added (installed by hand)
 
 brew "act"
-brew "awscli"
 brew "bat"
 brew "caddy"
 brew "cloudflared"

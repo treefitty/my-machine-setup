@@ -78,17 +78,6 @@ function tmux_new() {
 export LS_COLORS="${LS_COLORS}:ow=34;40"
 
 # -----------------
-# AWS aliases
-alias aws-sandbox="aws --profile sandbox"
-alias aws-production="aws --profile production"
-alias aws-sandbox-login="aws-sandbox sso login"
-alias aws-production-login="aws-production sso login"
-
-alias tf-sandbox="AWS_PROFILE=sandbox terraform"
-alias tf-production="AWS_PROFILE=production terraform"
-
-
-# -----------------
 # Machine-specific (ssh aliases etc), not in git
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 

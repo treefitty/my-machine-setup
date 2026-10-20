@@ -31,7 +31,6 @@ ln -sf "$(command -v batcat)" ~/.local/bin/bat
 ln -sf ~/.fzf/bin/fzf ~/.local/bin/fzf
 
 sudo snap install go --classic
-sudo snap install aws-cli --classic
 sudo snap install kubectl --classic
 
 

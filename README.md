@@ -38,9 +38,9 @@ Both scripts finish by running `dotfiles/install.sh`, which symlinks everything 
   - httpie, glances, wget
 - **Containers and cloud**
   - docker: OrbStack on macOS, docker-ce + buildx + compose plugin on Ubuntu
-  - go, aws-cli, kubectl (Ubuntu)
+  - go, kubectl (Ubuntu)
 - **macOS only** (`macos/Brewfile`)
-  - formulae: act, awscli, caddy, cloudflared, ffmpeg, gita, glow, pipenv, tilt, watch, ydiff, yt-dlp
+  - formulae: act, caddy, cloudflared, ffmpeg, gita, glow, pipenv, tilt, watch, ydiff, yt-dlp
   - personal taps: getvect, shepherd
   - casks: 1Password (+ CLI), Elasticvue, Ghostty, GitHub Desktop, Google Chrome, OrbStack, Slack, Stats, Zed
   - MesloLGS Nerd Font for the prompt
