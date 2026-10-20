@@ -1,0 +1,30 @@
+{
+    "*.js": {
+        "tabsize": 2
+    },
+    "autosu": true,
+    "eofnewline": false,
+    "fastdirty": true,
+    "filemanager-compressparent": true,
+    "filemanager-foldersfirst": true,
+    "filemanager-openonstart": false,
+    "filemanager-showdotfiles": true,
+    "filemanager-showignored": true,
+    "hidehelp": false,
+    "matchbraceleft": true,
+    "pluginchannels": [
+        "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
+    ],
+    "pluginrepos": [],
+    "tabsize": 2,
+    "tabstospaces": true,
+    "termtitle": false,
+    "lsp": {
+        "server": "python=pyls,go=gopls,typescript=deno lsp,rust=rust-analyzer",
+        "formatOnSave": true,
+        "ignoreMessages": "LS message1 to ignore|LS message 2 to ignore|...",
+        "tabcompletion": true,
+        "ignoreTriggerCharacters": "completion,signature",
+        "autocompleteDetails": false
+    }
+}

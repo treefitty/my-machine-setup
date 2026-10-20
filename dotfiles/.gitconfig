@@ -1,0 +1,41 @@
+
+[color]
+  ui = true
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = red
+    
+[core]
+	editor = micro
+[pull]
+  ff = only
+	rebase = true
+[user]
+	name = Paul Carroll
+	email = paul.carroll@gmail.com
+[merge]
+	tool = opendiff
+[diff]
+	tool = opendiff
+[init]
+	defaultBranch = main
+[pager]
+	branch = false
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
