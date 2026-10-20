@@ -13,7 +13,7 @@ Scripts to set up a new machine the way I like it: zsh/oh-my-zsh/p10k, tmux, mic
 
 Both scripts finish by running `dotfiles/install.sh`, which symlinks everything in `dotfiles/` into `~` (an existing real file is moved to `<name>.bak`). Edit a dotfile in `~` and you're editing the repo. Scripts are safe to re-run.
 
-    dotfiles/   # .zshrc .zshenv .gitconfig .tmux.conf .vimrc .p10k.zsh .config/{micro,ranger}, shared by both setups
+    dotfiles/   # .zshrc .zshenv .gitconfig .tmux.conf .vimrc .p10k.zsh .config/micro, shared by both setups
     macos/      # macos-setup.sh, Brewfile
     ubuntu/     # ubuntu-setup.sh
 
@@ -27,26 +27,26 @@ Both scripts finish by running `dotfiles/install.sh`, which symlinks everything 
 - **Languages**
   - node LTS via nvm (auto-switches on `.nvmrc`), with pnpm and bun
   - Python 3.14 via pyenv
-  - macOS: Ruby 3.2.8 via rbenv; Ubuntu: ydiff via pip
+  - Ubuntu: ydiff via pip
 - **Git**
   - `dotfiles/.gitconfig`: name/email, `micro` as editor, `main` as default branch, `pull.rebase`, `pull.ff only`, colours, `opendiff` as diff/merge tool
   - gh, lazygit
 - **Terminal tools**
   - tmux with tpm and plugins: tmux-sensible, vim-tmux-navigator, catppuccin, tmux-yank
   - micro with its lsp, filemanager, editorconfig and monokai-dark plugins, plus settings and keybindings from `dotfiles/`
-  - vim and ranger config
+  - vim config
   - httpie, glances, wget
 - **Containers and cloud**
-  - docker: OrbStack on macOS, docker-ce + buildx + compose plugin on Ubuntu; lazydocker
-  - go, aws-cli, kubectl (Ubuntu), yq
+  - docker: OrbStack on macOS, docker-ce + buildx + compose plugin on Ubuntu
+  - go, aws-cli, kubectl (Ubuntu)
 - **macOS only** (`macos/Brewfile`)
-  - formulae: act, awscli, caddy, cloudflared, dive, doctl, ffmpeg, gita, glow, granted, humanlog, k3d, k9s, kind, mkcert, notify, nvtop, pipenv, tilt, watch, watchman, xcodegen, ydiff, yt-dlp
+  - formulae: act, awscli, caddy, cloudflared, ffmpeg, gita, glow, pipenv, tilt, watch, ydiff, yt-dlp
   - personal taps: getvect, shepherd
   - casks: 1Password (+ CLI), Elasticvue, Ghostty, GitHub Desktop, Google Chrome, OrbStack, Slack, Stats, Zed
   - MesloLGS Nerd Font for the prompt
 - **Ubuntu only**
   - base: build-essential, curl, unzip, openssh-server, nmap, net-tools, traceroute, yamllint, xclip, pyenv build deps
-  - `desktop`: GIMP, Steam, Guake, nvtop, Slack, Zed, Chrome, NVIDIA drivers
+  - `desktop`: GIMP, Steam, Guake, Slack, Zed, Chrome, NVIDIA drivers
 
 ## After running
 - Open a new terminal. On macOS set its font to MesloLGS Nerd Font, and sign in to 1Password and OrbStack

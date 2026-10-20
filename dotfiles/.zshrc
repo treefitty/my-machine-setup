@@ -218,7 +218,6 @@ export PATH="$PATH:$HOME/.platformio/penv/bin"
 export PATH="$HOME/.local/bin:$PATH"
 source <(fzf --zsh)
 
-command -v rbenv >/dev/null && eval "$(rbenv init - zsh)"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"

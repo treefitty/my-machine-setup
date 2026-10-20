@@ -33,7 +33,6 @@ ln -sf ~/.fzf/bin/fzf ~/.local/bin/fzf
 sudo snap install go --classic
 sudo snap install aws-cli --classic
 sudo snap install kubectl --classic
-sudo snap install yq
 
 
 # ----
@@ -56,11 +55,10 @@ sudo usermod -aG docker "$USER"  # takes effect on next login
 
 
 # ----
-# lazygit + lazydocker
+# lazygit
 LG=$(curl -fsSL https://api.github.com/repos/jesseduffield/lazygit/releases/latest | grep -Po '"tag_name": *"v\K[^"]*')
 curl -fsSL "https://github.com/jesseduffield/lazygit/releases/download/v${LG}/lazygit_${LG}_Linux_$(uname -m | sed 's/aarch64/arm64/').tar.gz" |
   sudo tar -xz -C /usr/local/bin lazygit
-curl -fsSL https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
 
 
 # ----
@@ -109,7 +107,7 @@ micro -plugin install filemanager lsp editorconfig monokai-dark || true
 # desktop apps (x86_64 only: chrome, steam)
 sudo add-apt-repository -y multiverse
 sudo apt-get update -y
-sudo apt-get install -y gimp steam-installer guake nvtop
+sudo apt-get install -y gimp steam-installer guake
 
 sudo snap install slack
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# macOS (Apple Silicon) setup, mirrors my current mac: brew bundle, dotfiles, zsh + oh-my-zsh + p10k, tmux, micro, nvm, pyenv, rbenv...
+# macOS (Apple Silicon) setup, mirrors my current mac: brew bundle, dotfiles, zsh + oh-my-zsh + p10k, tmux, micro, nvm, pyenv...
 # Usage: macos-setup.sh
 set -eo pipefail
 
@@ -25,14 +25,10 @@ npm install -g pnpm bun
 
 
 # ----
-# pyenv + rbenv
+# pyenv
 eval "$(pyenv init -)"
 pyenv install -s 3.14
 pyenv global 3.14
-
-eval "$(rbenv init - bash)"
-rbenv install -s 3.2.8
-rbenv global 3.2.8
 
 
 # ----
